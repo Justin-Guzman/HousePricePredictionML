@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-_%&s26c%$4023@%6w!be@-e@tinheoa))k)!^v@yn-vr2f1)8h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [    'housepricepredictionml-33b996ce4b67.herokuapp.com',
+    'localhost',
+    '127.0.0.1',]
 
 
 # Application definition

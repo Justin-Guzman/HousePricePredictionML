@@ -1,0 +1,10 @@
+INFO:django.utils.autoreload:/Users/justinguzman/Desktop/HousePricePredictionML/HousePricePredictionML/HousePricePredictionML/views.py changed, reloading.
+INFO:root:User Input: [59982.197225708, 5.04055452310628, 7.83938778512049, 4.23, 26354.1094721031] → Prediction: $844772
+INFO:root:User Input: [59982.197225708, 5.04055452310628, 7.83938778512049, 4.23, 26354.1094721031] → Prediction: $843261
+INFO:root:User Input: [59982.197225708, 5.04055452310628, 7.83938778512049, 4.23, 26354.1094721031] → Prediction: $846116
+INFO:root:User Input: [59982.197225708, 5.04055452310628, 7.83938778512049, 4.23, 26354.1094721031] → Prediction: $845229
+INFO:root:User Input: [59982.197225708, 5.04055452310628, 7.83938778512049, 4.23, 26354.1094721031] → Prediction: $846391
+WARNING:django.request:Not Found: /predict/result/result
+INFO:root:User Input: [124.0, 8765.0, 8765.0, 876565.0, 54654.0] → Prediction: $3081380029
+INFO:root:User Input: [123.0, 123.0, 123.0, 123.0, 123.0] → Prediction: $32895839
+INFO:root:User Input: [123.0, 123.0, 123.0, 123.0, 123.0] → Prediction: $32518716

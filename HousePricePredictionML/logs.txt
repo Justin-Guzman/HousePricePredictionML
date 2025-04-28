@@ -100,3 +100,4 @@ INFO:root:User Input: [3.0, 3.0, 3.0, 3.0, 3.0] → Prediction: $-1781541
 INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2339085
 INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2348147
 INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2357664
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2349356

@@ -6,6 +6,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
+import os
+from django.conf import settings
 import logging
 logging.basicConfig(filename='logs.txt', level=logging.INFO)
 
@@ -16,7 +18,8 @@ def predict(request):
     return render(request, "predict.html")
 
 def result(request):
-    data = pd.read_csv("/Users/justinguzman/Desktop/HousePricePredictionML/data/USA_Housing.csv")
+    file_path = os.path.join(settings.BASE_DIR, 'data', 'USA_Housing.csv')
+    data = pd.read_csv(file_path)
     data = data.drop(['Address'], axis=1)
     X = data.drop('Price', axis=1)
     Y = data['Price']

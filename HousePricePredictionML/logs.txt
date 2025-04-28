@@ -8,3 +8,91 @@ WARNING:django.request:Not Found: /predict/result/result
 INFO:root:User Input: [124.0, 8765.0, 8765.0, 876565.0, 54654.0] → Prediction: $3081380029
 INFO:root:User Input: [123.0, 123.0, 123.0, 123.0, 123.0] → Prediction: $32895839
 INFO:root:User Input: [123.0, 123.0, 123.0, 123.0, 123.0] → Prediction: $32518716
+INFO:root:User Input: [3.0, 3.0, 3.0, 3.0, 3.0] → Prediction: $-1771199
+WARNING:django.request:Not Found: /predict/result/result
+WARNING:django.request:Not Found: /predict/result/result
+WARNING:django.request:Not Found: /predict/result/result
+WARNING:django.request:Not Found: /predict/result/result
+ERROR:django.request:Internal Server Error: /predict/result/
+Traceback (most recent call last):
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/HousePricePredictionML/HousePricePredictionML/views.py", line 19, in result
+    data = pd.read_csv("/Users/justinguzman/Desktop/HousePricePredictionML/venv/USA_Housing.csv")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/justinguzman/Desktop/HousePricePredictionML/venv/USA_Housing.csv'
+ERROR:django.request:Internal Server Error: /predict/result/
+Traceback (most recent call last):
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/HousePricePredictionML/HousePricePredictionML/views.py", line 19, in result
+    data = pd.read_csv("/Users/justinguzman/Desktop/HousePricePredictionML/venv/USA_Housing.csv")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/justinguzman/Desktop/HousePricePredictionML/venv/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/justinguzman/Desktop/HousePricePredictionML/venv/USA_Housing.csv'
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2360284
+WARNING:django.request:Not Found: /predict/result/result
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2350081
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2354903
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2358865
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2344441
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2356137
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1227009
+WARNING:django.request:Not Found: /predict/result/result
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1224374
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1225763
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1226534
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1225056
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1227899
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1224278
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1225932
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1223336
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1222777
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1221831
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1223945
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1224805
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1223216
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1223893
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1222933
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1224975
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1226074
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1224211
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1223004
+INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1222745

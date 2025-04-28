@@ -98,3 +98,5 @@ INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.0
 INFO:root:User Input: [79545.4585743168, 5.68286132161559, 7.00918814279224, 4.09, 23086.8005026865] → Prediction: $1222745
 INFO:root:User Input: [3.0, 3.0, 3.0, 3.0, 3.0] → Prediction: $-1781541
 INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2339085
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2348147
+INFO:root:User Input: [1.0, 1.0, 1.0, 1.0, 1.0] → Prediction: $-2357664
